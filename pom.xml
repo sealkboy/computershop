@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Definir el parent (Spring Boot version 2.7.x) -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.8</version> <!-- Se actualiza a una versión estable de Spring Boot -->
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>org.factoriaf5</groupId>
+    <artifactId>computershop</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>computershop</name>
+    <description>Demo project for Spring Boot</description>
+    <url/>
+
+    <!-- Configuraciones de propiedades -->
+    <properties>
+        <java.version>21</java.version> <!-- Utilizamos la versión de Java 21 -->
+    </properties>
+
+    <!-- Dependencias del proyecto -->
+    <dependencies>
+        <!-- Spring Boot Web Starter para desarrollo de aplicaciones web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Spring Boot Starter Test para pruebas unitarias -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- Configuración del proceso de construcción -->
+    <build>
+        <plugins>
+            <!-- Plugin de Spring Boot para empaquetar la aplicación -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <!-- Si hubiera alguna exclusión, se puede agregar aquí -->
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
